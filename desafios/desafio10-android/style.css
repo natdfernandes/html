@@ -1,9 +1,26 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'android';
+    src: url('Android.ttf') format(truetype);
+    
+}
+
 div{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
     background-image:linear-gradient(green, #388659, #52AA5E, #52AA8A);
+
+}
+
+div > ul{
+    list-style-type: none;
+    display: flex;
+    word-spacing: 5px;
     
+}
+
+h2{
+    font-family:'android', Arial, sans-serif;
 }
