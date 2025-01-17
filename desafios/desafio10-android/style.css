@@ -2,7 +2,9 @@
 
 @font-face {
     font-family: 'android';
-    src: url('Android.ttf') format(truetype);
+    src: url('recursos/fontes/android/Android.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
     
 }
 
