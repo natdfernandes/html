@@ -14,10 +14,18 @@
         <h1>Curiosidades de Tecnologia</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo de Tech, em um único lugar.</p>
         <ul>
-            <li><a href="#"></a>Home </li>
-            <li><a href="#"></a> Notícias </li>
-            <li><a href="#"></a> Curiosidades </li>
-            <li><a href="#"></a> Fale Conosco </li>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Notícias</a>
+            </li>
+            <li>
+                <a href="#">Curiosidades</a>
+            </li>
+            <li>
+                <a href="#">Fale conosco</a>
+            </li>
         </ul>
     </header>
 
@@ -34,7 +42,11 @@
             era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa
             para a
             criação de um mascote.</p>
-        <img src="recursos/imagens/dan-droids.png" alt="imagem do robozinho Andoid">
+        <picture>
+            <source media="(max-width:1000px )" srcset="recursos/imagens/dan-droids-pq.png" type="image/png">
+            <img src="recursos/imagens/dan-droids.png" alt="imagem do robozinho Andoid">
+        </picture>
+
         <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
         <h3>Surge um novo mascote</h3>
         <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A
@@ -42,7 +54,12 @@
             Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma
             maneira
             mais agradável.</p>
-        <img src="recursos/imagens/irina-blok.jpg" alt="Irina Blok">
+
+        <picture>
+            <source media="(max-width:1000px )" srcset="recursos/imagens/irina-blok-pq.jpg" type="image/jpg">
+            <img src="recursos/imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+
         <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O
             desenho
             também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do
@@ -53,42 +70,62 @@
             banheiro
             para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do
             Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=WkccmxrrEzt3RFZd"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <h3>[EXTRA] Quer aprender mais? </h3>
-        <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em
-            ordem
-            alfabética a partir da versão 1.5 até a 9.0.</p>
-        <ul>
-            <li>1.5 - Cupcake</li>
-            <li>1.6 - Donut</li>
-            <li>3.0 - Eclair</li>
-            <li>2.2 - Froyo</li>
-            <li>2.3 - Gingerbread</li>
-            <li>3.0 - Honeycomb</li>
-            <li>4.0 - Ice Cream Sandwich</li>
-            <li>4.1 - Jelly Bean</li>
-            <li>4.4 - KitKat</li>
-            <li>5.0 - Lolipop</li>
-            <li>6.0 - Marshmallow</li>
-            <li>7.0 - Nougat</li>
-            <li>8.0 - Oreo</li>
-            <li>9.0 - Pie</li>
 
-        </ul>
-        <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a
-            usar
-            numerações, o que deu origem ao Android 10.</p>
-        <p>Acesse aqui o site Android History para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe
-            para o sistema Android.</p>
+
+        <div id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=WkccmxrrEzt3RFZd"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <section>
+            <h4>Quer aprender mais? </h4>
+            <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce,
+                em
+                ordem
+                alfabética a partir da versão 1.5 até a 9.0.</p>
+            <div id="lista">
+                <ul>
+                    <li>1.5 - Cupcake</li>
+                    <li>1.6 - Donut</li>
+                    <li>3.0 - Eclair</li>
+                    <li>2.2 - Froyo</li>
+                    <li>2.3 - Gingerbread</li>
+                    <li>3.0 - Honeycomb</li>
+                    <li>4.0 - Ice Cream Sandwich</li>
+
+                </ul>
+                <ul>
+                    <li>4.1 - Jelly Bean</li>
+                    <li>4.4 - KitKat</li>
+                    <li>5.0 - Lolipop</li>
+                    <li>6.0 - Marshmallow</li>
+                    <li>7.0 - Nougat</li>
+                    <li>8.0 - Oreo</li>
+                    <li>9.0 - Pie</li>
+
+                </ul>
+            </div>
+
+
+            <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou
+                a
+                usar
+                numerações, o que deu origem ao Android 10.</p>
+            <p>Acesse aqui o site Android History para conhecer a sequência das versões "adocicadas" e o que cada uma
+                trouxe
+                para o sistema Android.</p>
+
+        </section>
+
         <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e
             seu
             simpático mascote.</p>
     </main>
     <footer>
-        <p>Site criado por Gustavo Guanabara para o CursoemVideo.</p>
+        <p>Criado por: Natalia Dias Fernandes &reg; </p>
+        <p>Inspirado no CursoEmVideo por Gustavo Guanabara.</p>
     </footer>
 
 </body>

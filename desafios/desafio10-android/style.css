@@ -12,7 +12,7 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
-    background-image: linear-gradient(green, #388659, #52AA5E, #52AA8A);
+    background-image: linear-gradient(to bottom, #388659, #52AA5E, green, rgb(60, 60, 60));
 
 }
 
@@ -23,8 +23,27 @@ header>ul {
 
 }
 
-ul:hover {
+li>a {
+    color: white;
+    text-decoration: none;
+}
+
+/*1 no body colocar o backgrandcolor
+no main trocar o padding para margin apenas para esquerda e direita
+na imagem colocar width 100%*/
+
+body {
+    background-color: #52AA8A;
+}
+
+
+a:hover {
     color: black;
+}
+
+img,
+iframe {
+    max-width: 100%;
 }
 
 h2,
@@ -34,18 +53,59 @@ h3 {
 }
 
 h3 {
-    background-color: #52AA8A;
+
+    background-image: linear-gradient(to right, #388659, #52AA5E, #52AA8A, white);
 }
 
 main {
     text-align: center;
     background-color: white;
-    padding: 100px;
+    margin: 100px;
+    padding: 8px;
 
 }
 
 footer {
+    padding: 2px;
     color: white;
     text-align: center;
     background-color: rgb(4, 62, 4);
+}
+
+div#video {
+    padding: 16px;
+    background-color: rgb(4, 62, 4);
+}
+
+h4 {
+    padding: 8px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-align: left;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #34a56b;
+    margin: 0;
+}
+
+section {
+    margin: 10px 25px;
+    background-color: #8bc8b1;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+section>div#lista {
+    /*usando colunas*/
+    display: flex;
+    gap: 8px;
+    justify-content: space-evenly;
+
+}
+
+section>div#lista>ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+
 }
