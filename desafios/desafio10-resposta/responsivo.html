@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            /*tornando responsivo com tamanho minimo e maximo*/
+            min-width: 280px;
+            /*largura maxima de celulares antigos*/
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora explicabo quam reprehenderit, aperiam
+            provident esse maxime dolorem architecto a eligendi deleniti consectetur ipsum exercitationem, molestiae
+            impedit reiciendis, ad perferendis non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            consectetur commodi aspernatur consequatur! Magni corrupti enim autem sed nobis a odit reiciendis libero
+            quaerat magnam incidunt voluptatem, exercitationem possimus. Ab! Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Nisi natus molestias ipsam at provident, numquam quibusdam blanditiis vel itaque alias
+            officia sit similique? Tempore quis aliquam sequi alias dolor nesciunt?</p>
+
+        <picture> <!--recurso de responsividade-->
+            <source media="(max-width:600px )" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="irina-blok">
+        </picture>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora explicabo quam reprehenderit, aperiam
+            provident esse maxime dolorem architecto a eligendi deleniti consectetur ipsum exercitationem, molestiae
+            impedit reiciendis, ad perferendis non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            consectetur commodi aspernatur consequatur! Magni corrupti enim autem sed nobis a odit reiciendis libero
+            quaerat magnam incidunt voluptatem, exercitationem possimus. Ab! Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Nisi natus molestias ipsam at provident, numquam quibusdam blanditiis vel itaque alias
+            officia sit similique? Tempore quis aliquam sequi alias dolor nesciunt?</p>
+
+    </main>
+</body>
+
+</html>
