@@ -13,6 +13,8 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+
         }
 
         td,
@@ -32,6 +34,13 @@
         tfoot {
             background-color: gray;
             color: white;
+        }
+
+        /*para fixar as informação da legenda e conseguir saber a informação da tabela*/
+        thead>tr>th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
 
         /*número em que a cor vai pulando
