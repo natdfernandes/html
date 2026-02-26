@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chatbot com Html e Javascript 🤖</h1>
+    <p id="resposta"></p>
+
+    <script>
+        function responder() {
+            const texto = document.getElementById("mensagem").value.toLowerCase();
+            let resposta = "";
+
+            if (texto.includes("oi")) {
+                resposta = "Oi! Seja bem-vinda 😊";
+            } else if (texto.includes("curso")) {
+                resposta = "Sou um chatbot feito para estudos!";
+            } else {
+                resposta = "Ainda estou aprendendo 🤖";
+            }
+
+            document.getElementById("resposta").innerText = resposta;
+        }
+    </script>
+
+</body>
+
+</html>
+<input id="mensagem" placeholder="Digite sua mensagem" />
+<button onclick="responder()">Enviar</button>
